@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+  </head>
+  <body>
+
+
+ <!-- header-start -->
+ <header>
+   <div class="header-area ">
+       <div id="sticky-header" class="main-header-area">
+           <div class="container-fluid p-0">
+               <div class="row align-items-center justify-content-between no-gutters">
+                   <div class="col-xl-2 col-lg-2">
+                     <div class="logo">
+                        <a href="index.html">NFTMUSE</a>
+                     </div>
+                   </div>
+                   <div class="col-xl-7 col-lg-8">
+                       <div class="main-menu  d-none d-lg-block">
+                           <nav>
+                               <ul id="navigation">
+                                   <li><a class="active" href="index.html">home</a></li>
+                                   <li><a href="explore.html">Explore</a></li>
+                                   <li><a href="#">pages <i class="fas fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="wallet.html">Wallet</a></li>
+                                        <li><a href="eprofile.html">Edit Profile</a></li>
+                                        <li><a href="create.html">Create Single Item</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                   </li>
+                               </ul>
+                           </nav>
+                       </div>
+                   </div>
+                   <div class="col-xl-3 col-lg-2  d-lg-block">
+                     <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+                   </div>
+                   <div class="col-12">
+                       <div class="mobile_menu d-block d-lg-none"></div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</header>
+<!-- header-end -->
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Searching....">
+							<button class=" btn2 skew" type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search area -->
+		<!-- Breadcrumbs Section Start -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-inner text-center">
+                    <h2 class="title white-color mb-26">Create Single Item</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Create Single Item</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumbs Section End -->
+
+<!-- Create Single Item Section Start -->
+<section class="rs-create-single-item  pt-101 pb-120 md-pt-70 md-pb-80">
+    <div class="container">
+        <div class="col-md-12 mt-5">
+            <div class="section-heading">
+              <h2>Create Your single item</h2>
+            </div>
+          </div>
+        <form class="single-item-from">
+            <div class="brdr-bottom pb-22 mb-30">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="pr-15 md-pr-0">
+                            <h4 class="title mb-15 switch-white">Upload file</h4>
+                            <div class="upload-file mb-30">
+                                <input type="file" name="file" id="file" class="d-none">
+                                <p class="desc mb-25">PNG, GIF, WEBP, MP4 or MP3. Max 100mb.</p>
+                                <label class="btn-part" for="file"><i class="fas fa-upload"></i> Choose File</label>
+                            </div>
+                            <div class="input-inner">
+                                <label for="name">Name</label>
+                                <div class="custom-style mb-15">
+                                    <input type="text" id="name" name="name" placeholder="e. g. `3D max`" required>
+                                </div>
+                                <label for="description">Description</label>
+                                <div class="custom-style mb-15">
+                                    <input type="text" id="description" name="description" placeholder="e. g. `creative art work`" required>
+                                </div>
+                                <label for="royalties">Royalties</label>
+                                <div class="custom-style mb-15">
+                                    <input type="text" id="royalties" name="royalties" placeholder="05" required>
+                                </div>
+                                <label for="price">Price</label>
+                                <div class="custom-style mb-15">
+                                    <input type="text" id="price" name="price" placeholder="1.5 ETH" required>
+                                    <img class="currecy" src="img/currecy1.png" alt="">
+                                </div>
+                            </div>
+                            <h5 class="title2 mb-10 switch-white">Choose collection</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-40">
+                        <h4 class="title mb-15 switch-white">Preview</h4>
+                        <div class="preview-wrap">
+                            <p class="mb-0">Upload file to preview your brand new NFT</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="btn-part">
+                    <ul>
+                    <li><a  href="#"><span><i class="ri-add-circle-fill"></i> New Collection</span></a></li>
+                    <li><a href="#"><img src="assets/images/fav2.png" alt=""> Wiggle Collection</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cost-detail mb-30">
+                <h4 class="fee mb-6">Service fee : 1.2%</h4>
+                <h4 class="recive mb-0">You will get receive : 1.1 ETH $3,041.65</h4>
+            </div>
+            <div class="submit-btn">
+                <ul>
+                    <li><button class="active" type="submit">Create</button></li>
+                    <li><button type="button">Preview</button></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Create Single Item Section End -->
+	
+   <footer class="footer-area">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                  <h4>About Us</h4>
+                  <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
+                  <div class="logo">
+                     <a href="index.html">NFTMUSE</a>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                  <h4>Contact Info</h4>
+                  <div class="footer-address">
+                      <p>Address :Your address goes
+                      here, your demo address.</p>
+                      <span>Phone : +8880 44338899</span>
+                      <span>Email : info@colorlib.com</span>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                  <h4>Important Link</h4>
+                  <ul>
+                      <li><a href="#">WHMCS-bridge</a></li>
+                      <li><a href="#">Search Domain</a></li>
+                      <li><a href="#">My Account</a></li>
+                      <li><a href="#">Shopping Cart</a></li>
+                      <li><a href="#">Our Shop</a></li>
+                  </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+                  <h4>Newsletter</h4>
+                  <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
+
+                  <div class="form-wrap" id="mc_embed_signup">
+                      <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                      method="get">
+                      <div class="input-group">
+                          <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
+                          <div class="input-group-append">
+                              <button class="btn click-btn" type="submit">
+                                  <i class="fab fa-telegram-plane"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div style="position: absolute; left: -5000px;">
+                          <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                      </div>
+
+                      <div class="info"></div>
+                  </form>
+              </div>
+
+          </div>
+      </div>
+      <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
+          <p class="footer-text m-0 col-lg-8 col-md-12">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="" target="_blank">Blaqcoder</a>
+</p>
+          <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+            <a href="" class="icon icon--instagram">
+               <i class="fa fa-instagram"></i>
+            </a>
+            <a href="" class="icon icon--twitter">
+               <i class="fa fa-twitter"></i> 
+            </a>
+            <a href="" class="icon icon--facebook">
+               <i class="fa fa-facebook"></i> 
+            </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+ <!-- Scripts -->
+  <!-- Bootstrap core JavaScript --> 
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="js/waypoints/waypoints.min.js"></script>
+  <script src="js/counterup/counterup.min.js"></script>
+  <script src="js/timecircle/time-circle.js"></script>
+  <script src="js/isotope/isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
+ <script src="js/main.js"></script>
+
+  </body>
+</html>
+
+
